@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .form{
+      border: 2px solid black;
+      width: 30%;
+      height: 30vh;
+      margin: 0 auto;
+      background-color: #0093E9;
+      background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    }
+    h1{
+      text-align: center;
+      color: red;
+    }
+    .inp{
+      border: none;
+      padding: 10px;
+      color: antiquewhite;
+    }
+   
+
+
+  </style>
+<body>
+
+  <script>  
+    /* input validation*/
+    function validateform(){  
+      var name=document.myform.name.value;  
+      var password=document.myform.password.value;  
+        
+      if (name==null || name==""){  
+        alert("Name can't be blank");  
+        return false;  
+      }else if(password.length<6){  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+        } 
+        
+        var x=document.myform.email.value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+      alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+      return false;  
+      }  
+      }  
+    </script>  
+    <body>  
+    <form name="myform" method="post" onsubmit="return validateform()" class="form"> 
+      <h1>Register Form</h1>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="text" name="email"></td>
+        </tr>
+      </table>
+      <input type="submit" value="register" class="inp">  
+    </form>
+
+</body>
+</html>

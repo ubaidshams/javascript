@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <h1>iPhone 13 Mini</h1>
+        <img
+          onclick="showPrice()"
+          src="./images/iPhone-13-mini.jpg"
+          alt="iPhone-13-mini"
+        />
+        <div class="about" id="about">
+          <p class="price" onmouseover="showDesc()" onmouseout="hideDesc()">
+            Price: ₹69,900.00
+          </p>
+          <div class="desc" id="desc">
+            About this item
+            <ul>
+              <li>13 cm (5.4-inch) Super Retina XDR display</li>
+              <li>
+                Cinematic mode adds shallow depth of field and shifts focus
+                automatically in your videos
+              </li>
+              <li>
+                Advanced dual-camera system with 12MP Wide and Ultra Wide
+                cameras; Photographic Styles, Smart HDR 4, Night mode, 4K Dolby
+                Vision HDR recording
+              </li>
+              <li>
+                12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR
+                recording
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

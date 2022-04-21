@@ -1,0 +1,79 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-btn
+{
+    position: relative;
+    background-color: black;
+    width: 200px;
+    height: 60px;
+    /* padding: 20px;    */
+    border: none;
+    border-radius: 10px;
+    transition: all .3s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    overflow: hidden;
+}
+.scroll
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.share
+{
+    position: relative;
+    top: 30px;
+    display: flex;
+    color: #A270BA;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .5s linear;
+}
+.share-hidden
+{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    font-size: 28px;
+    font-weight: 300;
+    transition: all .5s linear;
+}
+.share-btn:hover
+{
+    background: #A270BA;
+    /* color: black; */
+    box-shadow: 0px 0px 10px 2px black;
+    transition: all .3s linear;
+}
+
+ .share-btn:hover .share
+{
+    transform: translateY(-70px);
+} 
+.share-btn:hover .share-hidden
+{
+    transform: translateY(-75px);
+    
+} 

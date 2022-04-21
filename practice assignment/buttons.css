@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 20px 30px;
+    background: #000;
+    color: #efefef90;
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    
+}
+.visi
+{
+    z-index: 2;
+}
+button:hover
+{
+    background: #4d450164;
+    color: #fff;
+    box-shadow: 0px 0px 5px 2px black;
+    animation: shake 0.2s linear  infinite alternate ;   
+}
+button:hover img
+{
+animation: beerglass 0.3s linear infinite alternate;
+}
+@keyframes beerglass {
+    from {transform: rotate(-45deg);}
+    to {transform: rotate3d(90deg);}
+}
+button:hover .wave
+{
+    display: block;
+    animation: waves 8000ms infinite linear;
+}
+button:hover .hide
+{
+    display: none;
+}
+.visi-after
+{
+    display: none;
+    z-index: 3;
+}
+button:hover .visi-after
+{
+    display: block;
+}
+
+@keyframes shake {
+    from {transform: translateX(-10px);}
+    to {transform: translateX(10px);}
+}
+ .wave {
+    display: none;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000608;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -480px;
+    transform-origin: 50% 49%;
+    border-radius: 43%;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    
+   }
+   @keyframes waves {
+    from {
+     transform: rotate(0deg);
+    }
+    from {
+     transform: rotate(360deg);
+    }
+   }
+
+

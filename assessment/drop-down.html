@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Down</title>
+    <link rel="stylesheet" href="./drop-down.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="">Home</a></div>
+        <div><a href="">About us</a></div>
+        <div><a href="">Contact us</a></div>
+        <div><a onclick="showRegister()" id="showReg">Sign Up</a></div>
+        <div class="drop-down">
+            <a id="drop-btn" onclick="showDrop()">Drop down</a>
+            <div id="drop-content" class="drop-content">
+                <a href="">Drop 1</a>
+                <a href="">Drop 2</a>
+                <a href="">Drop 3</a>
+                <a href="">Drop 4</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container" id="form-container">
+        <i class="fa-solid fa-circle-xmark" id="close" onclick="hideRegister()"></i>
+        <h1>Register Form</h1>
+        <form action="">
+            <input type="text" name="uname" placeholder="Enter your name">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="password" name="pwd" placeholder="Enter your password">
+            <button>Register</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="./drop-down.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tstyle
+{
+    border: 2px solid;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    /* padding: 20px 0 20px 50px; */
+    text-align: center;
+}

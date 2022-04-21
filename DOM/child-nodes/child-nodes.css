@@ -1,0 +1,17 @@
+.onHover
+{
+    /* transform: scale(1.2); */
+    background-color: darkorchid;
+    box-shadow: 0px 0px 2px 3px;
+}
+.normal
+{
+    background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 40vh;
+    margin: auto;
+    /* transition: all 2s ease-in-out; */
+}

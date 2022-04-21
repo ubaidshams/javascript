@@ -1,0 +1,53 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.table-container
+{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+table{
+    border:1px solid;
+}
+tr
+{
+    border:1px solid;
+}
+td
+{
+    border:1px solid;
+}
+.bg-img
+{
+    background:url('./girl.webp');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    width:300px;
+    height:300px;
+}
+.bg-img:hover
+{
+    background:url('./girl-2.webp');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    width:300px;
+    height:300px;
+    animation: rotate 3s linear 1s infinite;
+}
+@keyframes rotate
+{
+    0%   {transform:rotate(0deg);}
+    /* 25%  {transform:rotate(90deg);}
+    50%  {transform:rotate(180deg);}
+    75%  {transform:rotate(2700deg);} */
+    100% {transform:rotate(360deg);}
+}

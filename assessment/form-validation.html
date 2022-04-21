@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validation</title>
+    <link rel="stylesheet" href="./form-validation.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="" class="form" id="form">
+            <input type="text" name="uname" id="uname" placeholder="Enter your name" onchange="nameValidate()">
+            <input type="email" name="email" id="email" placeholder="abc@example.com" onchange="emailValidate()">
+            <input type="password" name="pwd" id="pwd" placeholder="Enter your password" onchange="pwdValidate()">
+            <input type="tel" name="pno" id="pno" placeholder="Enter your phone number" onchange="pnoValidate()">
+            <input type="text" name="zip" id="zip" placeholder="Enter your pincode" onchange="zipValidate()">
+            <button type="submit" id="reg">Register</button>
+        </form>
+    </div>
+    <script src="./form-validation.js"></script>
+</body>
+</html>

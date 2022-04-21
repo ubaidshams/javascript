@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #A6ABBD;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    /* height: 50%; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.iholder
+{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #9B0058;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+.iholder:hover
+{
+    box-shadow: 0px 0px 100px 20px;
+}
+.uname
+{
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: thistle;
+}
+.email
+{
+    width: 80%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: thistle;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+.phone
+{
+    width: 80%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: thistle;
+    border: none;
+    padding:auto;
+    text-align: center;
+}
+.sub-btn
+{
+    width: 80%;
+    height: 10%;
+    border-radius: 5px;
+    background-color: #C97DC4;
+    border: none;
+    font-weight: bold;
+}
+.sub-btn:hover
+{
+    box-shadow: 0px 0px 4px 2px;
+}

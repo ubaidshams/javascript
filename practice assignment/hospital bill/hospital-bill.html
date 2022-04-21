@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Bill</title>
+    <link rel="stylesheet" href="./hospital-bill.css" />
+  </head>
+  <body>
+    <h1>Hospital bill generator</h1>
+
+    <div class="main">
+        <div class="table-container">
+      <table>
+        <tr>
+          <th>Diagnosis</th>
+          <th>Price in ₹</th>
+        </tr>
+        <tr>
+          <td>ECG</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Eye Test</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>CT scan</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>MRI</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <td>X-ray</td>
+          <td>800</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="form-container">
+      <input
+        type="text"
+        id="testName"
+        name="test name"
+        placeholder="Enter the name of the test"
+      />
+      <input
+        type="text"
+        id="priceInp"
+        name="Price"
+        placeholder="Enter the price of the test"
+      />
+      <button onclick="addBill()">Add</button>
+      <button onclick="printBill()">Print your bill</button>
+    </div>
+
+    <div id="bill">
+      <h1 id="total-head"></h1>
+      <table id="bill-table"></table>
+    </div>
+
+    </div>
+    <script src="./hospital-bill.js"></script>
+  </body>
+</html>

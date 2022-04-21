@@ -1,0 +1,25 @@
+/* *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.Display
+{
+    /* margin: auto; */
+    color: darkmagenta;
+    background-color: tomato;
+    text-align: center;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 3px 2px;
+}
+.nostyle
+{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

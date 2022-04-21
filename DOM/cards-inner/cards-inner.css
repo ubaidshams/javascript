@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#tripBlock
+{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: #90F8B5;
+}
+.tripContainer
+{
+    width: 30%;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #64F6D0 !important;
+    border-radius: 5px;
+    transition: all 1s linear;
+}
+.tripContainer:hover
+{
+    box-shadow: 0 0 20px 10px black;
+    transform: scale(1.2);
+    background-color: #005669 !important;
+    color: white;
+}
+
+.tripContainer img
+{
+   max-width: 25vw;
+   max-height: 30vh;
+}
+.tripContainer p
+{
+    text-align: center;
+}
